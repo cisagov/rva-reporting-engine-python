@@ -45,16 +45,27 @@ setup(
     name="example",
     # Versions should comply with PEP440
     version=get_version("src/example/_version.py"),
-    description="Example python library",
+    description="Example Python library",
     long_description=readme(),
     long_description_content_type="text/markdown",
+<<<<<<< HEAD
     # NCATS "homepage"
     url="https://www.us-cert.gov/resources/ncats",
     # The project's main homepage
     download_url="https://github.com/cisagov/rva-reporting-engine-python",
+=======
+    # Landing page for CISA's cybersecurity mission
+    url="https://www.cisa.gov/cybersecurity",
+    # Additional URLs for this project per
+    # https://packaging.python.org/guides/distributing-packages-using-setuptools/#project-urls
+    project_urls={
+        "Source": "https://github.com/cisagov/skeleton-python-library",
+        "Tracker": "https://github.com/cisagov/skeleton-python-library/issues",
+    },
+>>>>>>> 7dc735b4ad8d66f0794dd6d3e16bae869bb9958b
     # Author details
-    author="Cyber and Infrastructure Security Agency",
-    author_email="ncats@hq.dhs.gov",
+    author="Cybersecurity and Infrastructure Security Agency",
+    author_email="github@cisa.dhs.gov",
     license="License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
@@ -70,10 +81,15 @@ setup(
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3 :: Only",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: Implementation :: CPython",
     ],
     python_requires=">=3.6",
     # What does your project relate to?
